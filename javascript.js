@@ -1,7 +1,13 @@
+
+let outcome = '';
+let game = 1;
 let humanScore = 0;
 let computerScore = 0;
-let outcome = '';
+let drawMatches = 0;
+let letterS = '';
 
+
+// computers choice
 function randomRPS(){
     let randomNum = Math.random();
     let answer = '';
@@ -14,11 +20,13 @@ function randomRPS(){
     }
 }
 
+// receive input from player
 function getHumanChoice(){
     let userAns = prompt("Rock, Paper or Scissors? ")
     return newUserAns = userAns.toUpperCase()
 }
 
+// game logic
 function playRound(human, computer){  
     if (human === 'ROCK'){
         if (computer === 'Rock'){
@@ -47,18 +55,14 @@ function playRound(human, computer){
     }
     
 }
-    
+ 
+// blank function
 function nothing(){
     return 0;
 }
 
 function playGame(){
-    let game = 1;
-    let humanScore = 0;
-    let computerScore = 0;
-    let drawMatches = 0;
-    let letterS = '';
-
+    
     while (game <= 5){
         getHumanChoice()
         randomRPS()
@@ -82,4 +86,6 @@ function playGame(){
     console.log(`With ${drawMatches} draw${letterS}.`)
 }
 
-playGame()
+
+
+// playGame()
