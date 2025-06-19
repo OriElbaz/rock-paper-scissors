@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background-color: #FBE9D0;
+}
+
+/* HEADER */
+.header-text{
+    display: flex;
+    justify-content: center;
+    color: rgb(35, 35, 35); 
+    color: #874F41;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* MAIN BODY */
+
+/* SCORES */
+
+.scores-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.container-score{
+    display: flex;
+    flex-direction: column;
+}
+
+.scores-heading {
+   display: flex;
+   justify-content: center;
+   color: #874F41;
+   font-size: 24px;
+}
+.scores{
+    color: #244855;
+    font-size: 50px;
+}
+
+.player-score, .pc-score {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: solid 2px #874F41;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h3{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+/* PC CHOICE */
+.pc-choice {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.pc-heading{
+    color: #244855;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.choice-container {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #874F41;
+    color: #FBE9D0;
+    text-align: center;
+    height: 50px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+
+/* BUTTONS */
+.button-body{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    width: 100px;
+    padding: 8px 0px;
+    background-color: #244855;
+    color: #FBE9D0;
+    border-radius: 10px;
+    /* border: solid 3px #244855; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+button:active {
+    box-shadow: inset 2px 2px grey;
+}
